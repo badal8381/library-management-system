@@ -1,12 +1,17 @@
 import mysql.connector
 
 # Change the user and password
+# Connection to the database
 mydb = mysql.connector.connect(
     host="localhost",
     database="library",
     user = "root",
     password="Badal@8381962255")
 
+
+
+# Creating tables into the library database
+# Student, Book and issue book tables are being created
 
 def create_db():
 
