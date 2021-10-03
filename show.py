@@ -3,7 +3,7 @@ from library_data.MySQL import studentQuery, bookQuery, studentWithBookQuery
 import tkinter as tk
 from tkinter import ttk
 
-
+# This is graphical interface for data display
 def ShowBook():
     root = tk.Tk()
     root.title("Books")
