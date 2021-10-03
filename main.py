@@ -23,21 +23,27 @@ def Main():
         if event == sg.WINDOW_CLOSED or event == 'Quit':
             break
 
+        # This button navigates to Register Book page
         if event == 'Register Book':
             BookRegister()
 
+        # This button navigates to Register Students page
         if event == 'Register Student':
             studentRegister()
-
+        
+        # This button navigates to Delete Book page
         if event == 'Delete Book':
             DeleteBook()
 
+        # This button navigates to Issue Book page
         if event == 'Issue Book to Student':
             IssueBook()
-
+        
+        # This button navigates to View Students page
         if event == 'View Students with Books':
             showStudentsWithBooks()
         
+        # This button navigates to View Students page
         if event == 'View Books':
             showBook()
             
