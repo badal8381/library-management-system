@@ -2,7 +2,7 @@ from tkinter.constants import FALSE, TRUE
 import PySimpleGUI as sg
 from library_data.MySQL import BookDB, DeleteBookDB, studentDB, returnBookDB
 
-
+#This function registers book
 def BookRegister():
     """
     Book Registration Page
