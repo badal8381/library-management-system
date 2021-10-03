@@ -40,10 +40,12 @@ def Main():
         
         if event == 'View Books':
             showBook()
-
+            
+        # This button navigates to View Students page
         if event == 'View Students':
             showStudents()
-        
+            
+        # This button navigates to Return Book page
         if event == 'Return Book':
             returnBook()
 
