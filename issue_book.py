@@ -1,7 +1,7 @@
 import PySimpleGUI as sg
 from library_data.MySQL import IssueBookDB
 
-
+# This function issues book for an user
 def IssueBook():
     """
     Book Registration Page
