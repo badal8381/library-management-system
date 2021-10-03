@@ -1,13 +1,13 @@
 import mysql.connector
 
-
+# Connection to the database
 mydb = mysql.connector.connect(
     host="localhost",)
     #database="library",
     #user= "root",
     #password="Badal@8381962255")
     
-
+# this function inserts data into Book table
 def BookDB(book_id, book_name, author_name, avail):
 
     mycursor = mydb.cursor()
@@ -19,7 +19,7 @@ def BookDB(book_id, book_name, author_name, avail):
     print(mycursor.rowcount, "Record Inserted")
     mydb.commit()
 
-
+# this function inserts data into Issue Book table
 def IssueBookDB(roll_no, book_id):
 
     mycursor = mydb.cursor()
@@ -31,7 +31,7 @@ def IssueBookDB(roll_no, book_id):
     print(mycursor.rowcount, "Record Inserted")
     mydb.commit()
 
-
+# this function inserts data into Student table
 def studentDB(roll_no, first_name, last_name, std):
 
     mycursor = mydb.cursor()
@@ -43,7 +43,7 @@ def studentDB(roll_no, first_name, last_name, std):
     print(mycursor.rowcount, "Record Inserted")
     mydb.commit()
 
-
+# this function returns data from Book table
 def bookQuery():
 
     mycursor = mydb.cursor()
@@ -57,7 +57,7 @@ def bookQuery():
 
     return myresult
 
-
+# this function deletes data from Book table
 def DeleteBookDB(id):
 
     mycursor = mydb.cursor()
@@ -70,7 +70,7 @@ def DeleteBookDB(id):
     mydb.commit()
     print(mycursor.rowcount, "Book Deleted")
 
-
+# this function delets data from Issue Book table
 def returnBookDB(roll_no, book_id, student_name, std):
 
     mycursor = mydb.cursor()
@@ -83,7 +83,7 @@ def returnBookDB(roll_no, book_id, student_name, std):
     mydb.commit()
     print(f"{student_name} of class {std} Returned a Book with Book ID {book_id}")
 
-
+# this function Returns data of students having books from Book and issue book table
 def studentWithBookQuery():
     mycursor = mydb.cursor()
 
@@ -96,7 +96,7 @@ def studentWithBookQuery():
 
     return myresult
 
-
+# this function returns data from Students table
 def studentQuery():
     mycursor = mydb.cursor()
 
