@@ -1,6 +1,5 @@
 import mysql.connector
 
-# Change the user and password
 # Connection to the database
 mydb = mysql.connector.connect(
     host="localhost",
